@@ -1,0 +1,2 @@
+# fubbesbot
+Football calendar bot

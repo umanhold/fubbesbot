@@ -1,0 +1,538 @@
+Country,Club,Club_Lower,Club_Url
+Deutschland,Bayer Leverkusen,bayer leverkusen,bayer-leverkusen
+Deutschland,Bayern München,bayern münchen,bayern-muenchen
+Deutschland,Borussia Dortmund,borussia dortmund,borussia-dortmund
+Deutschland,Werder Bremen,werder bremen,werder-bremen
+Deutschland,Blau-Weiß 90 Berlin,blau-weiß 90 berlin,blau-weiss-90-berlin
+Deutschland,FC Schalke 04,fc schalke 04,fc-schalke-04
+Deutschland,TSV Havelse,tsv havelse,tsv-havelse
+Deutschland,FC Remscheid,fc remscheid,fc-remscheid
+Deutschland,FC 08 Homburg,fc 08 homburg,fc-08-homburg
+Deutschland,VfB Oldenburg,vfb oldenburg,vfb-oldenburg
+Deutschland,VfL Wolfsburg,vfl wolfsburg,vfl-wolfsburg
+Deutschland,VfB Leipzig,vfb leipzig,1-fc-lok-leipzig
+Deutschland,FC Gütersloh,fc gütersloh,fc-guetersloh
+Deutschland,SG Wattenscheid 09,sg wattenscheid 09,sg-wattenscheid-09
+Deutschland,TeBe Berlin,tebe berlin,tebe-berlin
+Deutschland,SSV Ulm 1846,ssv ulm 1846,ssv-ulm-1846
+Deutschland,1. FC Schweinfurt 05,1. fc schweinfurt 05,1-fc-schweinfurt-05
+Deutschland,SSV Reutlingen,ssv reutlingen,ssv-reutlingen
+Deutschland,Eintracht Trier,eintracht trier,eintracht-trier
+Deutschland,Sportfreunde Siegen,sportfreunde siegen,sportfreunde-siegen
+Deutschland,Rot-Weiss Essen,rot-weiss essen,rot-weiss-essen
+Deutschland,1899 Hoffenheim,1899 hoffenheim,1899-hoffenheim
+Deutschland,Bor. Mönchengladbach,bor. mönchengladbach,bor-moenchengladbach
+Deutschland,1. FSV Mainz 05,1. fsv mainz 05,1-fsv-mainz-05
+Deutschland,FC Augsburg,fc augsburg,fc-augsburg
+Deutschland,Eintracht Frankfurt,eintracht frankfurt,eintracht-frankfurt
+Deutschland,Hertha BSC,hertha bsc,hertha-bsc
+Deutschland,SC Freiburg,sc freiburg,sc-freiburg
+Deutschland,1. FC Köln,1. fc köln,1-fc-koeln
+Deutschland,VfB Stuttgart,vfb stuttgart,vfb-stuttgart
+Deutschland,1. FC Nürnberg,1. fc nürnberg,1-fc-nuernberg
+Deutschland,FC St. Pauli,fc st. pauli,fc-st-pauli
+Deutschland,Hamburger SV,hamburger sv,hamburger-sv
+Deutschland,Hannover 96,hannover 96,hannover-96
+Deutschland,SpVgg Greuther Fürth,spvgg greuther fürth,spvgg-greuther-fuerth
+Deutschland,VfL Bochum,vfl bochum,vfl-bochum
+Deutschland,1. FC Union Berlin,1. fc union berlin,1-fc-union-berlin
+Deutschland,Fortuna Düsseldorf,fortuna düsseldorf,fortuna-duesseldorf
+Deutschland,Kickers Emden,kickers emden,kickers-emden
+Deutschland,Wuppertaler SV,wuppertaler sv,wuppertaler-sv
+Deutschland,Rot Weiss Ahlen,rot weiss ahlen,rot-weiss-ahlen
+Deutschland,TuS Koblenz,tus koblenz,tus-koblenz
+Deutschland,Rot-Weiß Oberhausen,rot-weiß oberhausen,rot-weiss-oberhausen
+Deutschland,SV Sandhausen,sv sandhausen,sv-sandhausen
+Deutschland,Alemannia Aachen,alemannia aachen,alemannia-aachen
+Deutschland,Kickers Offenbach,kickers offenbach,kickers-offenbach
+Deutschland,SV Babelsberg 03,sv babelsberg 03,sv-babelsberg-03
+Deutschland,1. FC Heidenheim 1846,1. fc heidenheim 1846,1-fc-heidenheim-1846
+Deutschland,RB Leipzig,rb leipzig,rb-leipzig
+Deutschland,SV 07 Elversberg,sv 07 elversberg,sv-07-elversberg
+Deutschland,SV Darmstadt 98,sv darmstadt 98,sv-darmstadt-98
+Deutschland,Wacker Burghausen,wacker burghausen,wacker-burghausen
+Deutschland,Arminia Bielefeld,arminia bielefeld,arminia-bielefeld
+Deutschland,Borussia Dortmund II,borussia dortmund ii,borussia-dortmund-ii
+Deutschland,Erzgebirge Aue,erzgebirge aue,erzgebirge-aue
+Deutschland,Stuttgarter Kickers,stuttgarter kickers,stuttgarter-kickers
+Deutschland,VfB Stuttgart II,vfb stuttgart ii,vfb-stuttgart-ii
+Deutschland,1. FSV Mainz 05 II,1. fsv mainz 05 ii,1-fsv-mainz-05-ii
+Deutschland,FSV Frankfurt,fsv frankfurt,fsv-frankfurt
+Deutschland,Holstein Kiel,holstein kiel,holstein-kiel
+Deutschland,Jahn Regensburg,jahn regensburg,jahn-regensburg
+Deutschland,Rot-Weiß Erfurt,rot-weiß erfurt,rot-weiss-erfurt
+Deutschland,SC Paderborn 07,sc paderborn 07,sc-paderborn-07
+Deutschland,Werder Bremen II,werder bremen ii,werder-bremen-ii
+Deutschland,Energie Cottbus,energie cottbus,energie-cottbus
+Deutschland,Fortuna Köln,fortuna köln,fortuna-koeln
+Deutschland,Karlsruher SC,karlsruher sc,karlsruher-sc
+Deutschland,Sportfreunde Lotte,sportfreunde lotte,sportfreunde-lotte
+Deutschland,VfL Osnabrück,vfl osnabrück,vfl-osnabrueck
+Deutschland,VfR Aalen,vfr aalen,vfr-aalen
+Deutschland,Chemnitzer FC,chemnitzer fc,chemnitzer-fc
+Deutschland,Eintracht Braunschweig,eintracht braunschweig,eintracht-braunschweig
+Deutschland,FC Carl Zeiss Jena,fc carl zeiss jena,fc-carl-zeiss-jena
+Deutschland,Preußen Münster,preußen münster,preussen-muenster
+Deutschland,SG Sonnenhof Großaspach,sg sonnenhof großaspach,sg-sonnenhof-grossaspach
+Deutschland,Würzburger Kickers,würzburger kickers,wuerzburger-kickers
+Deutschland,1. FC Kaiserslautern,1. fc kaiserslautern,1-fc-kaiserslautern
+Deutschland,1. FC Magdeburg,1. fc magdeburg,1-fc-magdeburg
+Deutschland,1. FC Saarbrücken,1. fc saarbrücken,1-fc-saarbruecken
+Deutschland,Bayern München II,bayern münchen ii,bayern-muenchen-ii
+Deutschland,Dynamo Dresden,dynamo dresden,dynamo-dresden
+Deutschland,FC Ingolstadt 04,fc ingolstadt 04,fc-ingolstadt-04
+Deutschland,FSV Zwickau,fsv zwickau,fsv-zwickau
+Deutschland,Hallescher FC,hallescher fc,hallescher-fc
+Deutschland,Hansa Rostock,hansa rostock,hansa-rostock
+Deutschland,KFC Uerdingen 05,kfc uerdingen 05,kfc-uerdingen-05
+Deutschland,MSV Duisburg,msv duisburg,msv-duisburg
+Deutschland,SC Verl,sc verl,sc-verl
+Deutschland,SpVgg Unterhaching,spvgg unterhaching,spvgg-unterhaching
+Deutschland,SV Meppen,sv meppen,sv-meppen
+Deutschland,SV Wehen Wiesbaden,sv wehen wiesbaden,sv-wehen-wiesbaden
+Deutschland,TSV 1860 München,tsv 1860 münchen,tsv-1860-muenchen
+Deutschland,Türkgücü München,türkgücü münchen,tuerkguecue-muenchen
+Deutschland,VfB Lübeck,vfb lübeck,vfb-luebeck
+Deutschland,Viktoria Köln,viktoria köln,viktoria-koeln
+Deutschland,Waldhof Mannheim,waldhof mannheim,waldhof-mannheim
+England,Arsenal FC,arsenal fc,arsenal-fc
+England,Chelsea FC,chelsea fc,chelsea-fc
+England,Everton FC,everton fc,everton-fc
+England,Liverpool FC,liverpool fc,liverpool-fc
+England,Manchester United,manchester united,manchester-united
+England,Tottenham Hotspur,tottenham hotspur,tottenham-hotspur
+England,Manchester City,manchester city,manchester-city
+England,West Ham United,west ham united,west-ham-united
+England,Crystal Palace,crystal palace,crystal-palace
+England,Newcastle United,newcastle united,newcastle-united
+England,Aston Villa,aston villa,aston-villa
+England,Fulham FC,fulham fc,fulham-fc
+England,West Bromwich Albion,west bromwich albion,west-bromwich-albion
+England,Birmingham City,birmingham city,birmingham-city
+England,Derby County,derby county,derby-county
+England,Middlesbrough FC,middlesbrough fc,middlesbrough-fc
+England,Watford FC,watford fc,watford-fc
+England,Burnley FC,burnley fc,burnley-fc
+England,Reading FC,reading fc,reading-fc
+England,Stoke City,stoke city,stoke-city
+England,Queens Park Rangers,queens park rangers,queens-park-rangers
+England,Nottingham Forest,nottingham forest,nottingham-forest
+England,Leicester City,leicester city,leicester-city
+England,Leeds United,leeds united,leeds-united
+England,Norwich City,norwich city,norwich-city
+England,Southampton FC,southampton fc,southampton-fc
+England,Sheffield Wednesday,sheffield wednesday,sheffield-wednesday
+England,Wolverhampton Wanderers,wolverhampton wanderers,wolverhampton-wanderers
+England,Bristol City,bristol city,bristol-city
+England,Preston North End,preston north end,preston-north-end
+England,Millwall FC,millwall fc,millwall-fc
+England,Sheffield United,sheffield united,sheffield-united
+England,Blackburn Rovers,blackburn rovers,blackburn-rovers
+England,Barnsley FC,barnsley fc,barnsley-fc
+England,Charlton Athletic,charlton athletic,charlton-athletic
+England,Ipswich Town,ipswich town,ipswich-town
+England,Sunderland AFC,sunderland afc,sunderland-afc
+England,Wigan Athletic,wigan athletic,wigan-athletic
+England,Brighton & Hove Albion,brighton & hove albion,brighton-hove-albion
+England,Cardiff City,cardiff city,cardiff-city
+England,Huddersfield Town,huddersfield town,huddersfield-town
+England,Hull City,hull city,hull-city
+England,Swansea City,swansea city,swansea-city
+England,Rushden & Diamonds,rushden & diamonds,rushden-diamonds
+England,Boston United,boston united,boston-united
+England,Peterborough United,peterborough united,peterborough-united
+England,Brentford FC,brentford fc,brentford-fc
+England,Chester City,chester city,chester-city
+England,AFC Bournemouth,afc bournemouth,afc-bournemouth
+England,Darlington FC,darlington fc,darlington-fc
+England,Hereford United,hereford united,hereford-united
+England,Gillingham FC,gillingham fc,gillingham-fc
+England,Rotherham United,rotherham united,rotherham-united
+England,Fleetwood Town,fleetwood town,fleetwood-town
+England,Rochdale AFC,rochdale afc,rochdale-afc
+England,Burton Albion,burton albion,burton-albion
+England,Shrewsbury Town,shrewsbury town,shrewsbury-town
+England,AFC Wimbledon,afc wimbledon,afc-wimbledon
+England,Bristol Rovers,bristol rovers,bristol-rovers
+England,Oxford United,oxford united,oxford-united
+England,Blackpool FC,blackpool fc,blackpool-fc
+England,Doncaster Rovers,doncaster rovers,doncaster-rovers
+England,Portsmouth FC,portsmouth fc,portsmouth-fc
+England,Accrington Stanley,accrington stanley,accrington-stanley
+England,Coventry City,coventry city,coventry-city
+England,Luton Town,luton town,luton-town
+England,Wycombe Wanderers,wycombe wanderers,wycombe-wanderers
+England,Bury FC,bury fc,bury-fc
+England,Milton Keynes Dons,milton keynes dons,milton-keynes-dons
+England,Crewe Alexandra,crewe alexandra,crewe-alexandra
+England,Northampton Town,northampton town,northampton-town
+England,Plymouth Argyle,plymouth argyle,plymouth-argyle
+England,Swindon Town,swindon town,swindon-town
+England,Bolton Wanderers,bolton wanderers,bolton-wanderers
+England,Bradford City,bradford city,bradford-city
+England,Cambridge United,cambridge united,cambridge-united
+England,Carlisle United,carlisle united,carlisle-united
+England,Colchester United,colchester united,colchester-united
+England,Crawley Town,crawley town,crawley-town
+England,Exeter City,exeter city,exeter-city
+England,Mansfield Town,mansfield town,mansfield-town
+England,Morecambe FC,morecambe fc,morecambe-fc
+England,Newport County,newport county,newport-county
+England,Oldham Athletic,oldham athletic,oldham-athletic
+England,Port Vale FC,port vale fc,port-vale-fc
+England,Scunthorpe United,scunthorpe united,scunthorpe-united
+England,Southend United,southend united,southend-united
+England,Stevenage FC,stevenage fc,stevenage-fc
+England,Walsall FC,walsall fc,walsall-fc
+England,Cheltenham Town,cheltenham town,cheltenham-town
+England,Grimsby Town,grimsby town,grimsby-town
+England,Kidderminster Harriers,kidderminster harriers,kidderminster-harriers
+England,Welling United FC,welling united fc,welling-united-fc
+England,Forest Green Rovers,forest green rovers,forest-green-rovers
+England,Lincoln City,lincoln city,lincoln-city
+England,North Ferriby United,north ferriby united,north-ferriby-united
+England,Southport FC,southport fc,southport-fc
+England,York City,york city,york-city
+England,Chester FC,chester fc,chester-fc
+England,Guiseley AFC,guiseley afc,guiseley-afc
+England,Macclesfield Town,macclesfield town,macclesfield-town
+England,Tranmere Rovers,tranmere rovers,tranmere-rovers
+England,Braintree Town,braintree town,braintree-town
+England,Gateshead FC,gateshead fc,gateshead-fc
+England,Havant & Waterlooville,havant & waterlooville,havant-waterlooville
+England,Leyton Orient,leyton orient,leyton-orient
+England,Maidstone United,maidstone united,maidstone-united
+England,Salford City,salford city,salford-city
+England,AFC Fylde,afc fylde,afc-fylde
+England,Barrow AFC,barrow afc,barrow-afc
+England,Chorley FC,chorley fc,chorley-fc
+England,Ebbsfleet United,ebbsfleet united,ebbsfleet-united
+England,Harrogate Town,harrogate town,harrogate-town
+England,Aldershot Town,aldershot town,aldershot-town
+England,Altrincham FC,altrincham fc,altrincham-fc
+England,Barnet FC,barnet fc,barnet-fc
+England,Boreham Wood,boreham wood,boreham-wood
+England,Bromley FC,bromley fc,bromley-fc
+England,Chesterfield FC,chesterfield fc,chesterfield-fc
+England,Dagenham & Redbridge,dagenham & redbridge,dagenham-redbridge
+England,Dover Athletic,dover athletic,dover-athletic
+England,Eastleigh FC,eastleigh fc,eastleigh-fc
+England,Halifax Town,halifax town,halifax-town
+England,Hartlepool United,hartlepool united,hartlepool-united
+England,King's Lynn,king's lynn,kings-lynn
+England,Maidenhead United,maidenhead united,maidenhead-united
+England,Notts County,notts county,notts-county
+England,Solihull Moors,solihull moors,solihull-moors
+England,Stockport County,stockport county,stockport-county
+England,Sutton United,sutton united,sutton-united
+England,Torquay United,torquay united,torquay-united
+England,Wealdstone FC,wealdstone fc,wealdstone-fc
+England,Weymouth FC,weymouth fc,weymouth-fc
+England,Woking FC,woking fc,woking-fc
+England,Wrexham AFC,wrexham afc,wrexham-afc
+England,Yeovil Town,yeovil town,yeovil-town
+Italien,AC Milan,ac milan,ac-milan
+Italien,AS Roma,as roma,as-roma
+Italien,Inter,inter,inter
+Italien,Lazio Roma,lazio roma,lazio-roma
+Italien,Acireale,acireale,acireale
+Italien,Udinese Calcio,udinese calcio,udinese-calcio
+Italien,Castel di Sangro,castel di sangro,castel-di-sangro
+Italien,AS Fidelis Andria,as fidelis andria,fidelis-andria
+Italien,Lucchese,lucchese,lucchese
+Italien,AC Savoia 1908,ac savoia 1908,ac-savoia-1908
+Italien,Alzano Virescit,alzano virescit,alzano-virescit
+Italien,Fermana FC,fermana fc,fermana-fc
+Italien,AC Pistoiese,ac pistoiese,us-pistoiese
+Italien,ACF Fiorentina,acf fiorentina,acf-fiorentina
+Italien,US Catanzaro,us catanzaro,us-catanzaro
+Italien,AC Arezzo,ac arezzo,us-arezzo
+Italien,Genoa CFC,genoa cfc,genoa-cfc
+Italien,Juventus,juventus,juventus
+Italien,SSC Napoli,ssc napoli,ssc-napoli
+Italien,FC Messina,fc messina,acr-messina
+Italien,Ravenna Calcio,ravenna calcio,ravenna-calcio
+Italien,Rimini Calcio,rimini calcio,ac-rimini
+Italien,Treviso FBC,treviso fbc,a-c-d-treviso
+Italien,AC Ancona,ac ancona,us-anconitana
+Italien,AC Mantova,ac mantova,mantova-1911-ssd
+Italien,Gallipoli,gallipoli,gallipoli
+Italien,Atalanta,atalanta,atalanta
+Italien,Piacenza Calcio,piacenza calcio,piacenza-calcio
+Italien,Portogruaro Summaga,portogruaro summaga,portogruaro-summaga
+Italien,Unione Triestina,unione triestina,unione-triestina
+Italien,AS Gubbio,as gubbio,as-gubbio
+Italien,ASG Nocerina,asg nocerina,asg-nocerina
+Italien,Sampdoria,sampdoria,sampdoria
+Italien,Torino FC,torino fc,torino-fc
+Italien,UC AlbinoLeffe,uc albinoleffe,uc-albinoleffe
+Italien,Sassuolo Calcio,sassuolo calcio,sassuolo-calcio
+Italien,US Grosseto FC,us grosseto fc,us-grosseto-fc
+Italien,AC Siena,ac siena,robur-siena
+Italien,AS Varese 1910,as varese 1910,as-varese-1910
+Italien,Bologna FC,bologna fc,bologna-fc
+Italien,Calcio Catania,calcio catania,calcio-catania
+Italien,Cagliari Calcio,cagliari calcio,cagliari-calcio
+Italien,Calcio Como,calcio como,calcio-como
+Italien,Modena FC,modena fc,modena-fc
+Italien,Virtus Lanciano,virtus lanciano,virtus-lanciano
+Italien,Latina Calcio,latina calcio,latina-calcio
+Italien,AC Cesena,ac cesena,ac-cesena
+Italien,FC Bari 1908,fc bari 1908,ssc-bari
+Italien,Novara Calcio,novara calcio,novara-calcio
+Italien,Parma Calcio 1913,parma calcio 1913,parma-calcio-1913
+Italien,Pro Vercelli,pro vercelli,pro-vercelli
+Italien,Ternana Calcio,ternana calcio,ternana-calcio
+Italien,US Avellino,us avellino,us-avellino
+Italien,Calcio Padova,calcio padova,calcio-padova
+Italien,Carpi FC,carpi fc,carpi-fc
+Italien,Foggia Calcio,foggia calcio,foggia-calcio
+Italien,Hellas Verona,hellas verona,hellas-verona
+Italien,US Palermo,us palermo,palermo-fc
+Italien,AC Perugia Calcio,ac perugia calcio,ac-perugia-calcio
+Italien,AS Livorno,as livorno,as-livorno
+Italien,Benevento Calcio,benevento calcio,benevento-calcio
+Italien,FC Crotone,fc crotone,fc-crotone
+Italien,Spezia Calcio,spezia calcio,spezia-calcio
+Italien,SS Juve Stabia,ss juve stabia,ss-juve-stabia
+Italien,Trapani Calcio,trapani calcio,trapani-calcio
+Italien,AC Pisa,ac pisa,ac-pisa
+Italien,AC Reggiana 1919,ac reggiana 1919,ac-reggiana-1919
+Italien,AS Cittadella,as cittadella,as-cittadella
+Italien,Ascoli Calcio,ascoli calcio,ascoli-calcio
+Italien,Brescia Calcio,brescia calcio,brescia-calcio
+Italien,Chievo Verona,chievo verona,chievo-verona
+Italien,Cosenza Calcio,cosenza calcio,cosenza-calcio
+Italien,Empoli FC,empoli fc,empoli-fc
+Italien,Frosinone Calcio,frosinone calcio,frosinone-calcio
+Italien,Pescara Calcio,pescara calcio,pescara-calcio
+Italien,Pordenone Calcio,pordenone calcio,pordenone-calcio
+Italien,Reggina 1914,reggina 1914,reggina-1914
+Italien,SPAL 2013 Ferrara,spal 2013 ferrara,spal-2013-ferrara
+Italien,SS Monza 1912,ss monza 1912,ss-monza-1912
+Italien,US Cremonese,us cremonese,us-cremonese
+Italien,US Lecce,us lecce,us-lecce
+Italien,US Salernitana 1919,us salernitana 1919,us-salernitana-1919
+Italien,Venezia FC,venezia fc,venezia-fc
+Italien,Vicenza Virtus,vicenza virtus,vicenza-virtus
+Italien,Virtus Entella,virtus entella,virtus-entella
+Spanien,Athletic Bilbao,athletic bilbao,athletic-bilbao
+Spanien,FC Barcelona,fc barcelona,fc-barcelona
+Spanien,Real Madrid,real madrid,real-madrid
+Spanien,Valencia CF,valencia cf,valencia-cf
+Spanien,Orihuela Deportiva CF,orihuela deportiva cf,orihuela-cf
+Spanien,Real Avilés,real avilés,real-aviles
+Spanien,UE Figueres,ue figueres,ue-figueres
+Spanien,Palamós CF,palamós cf,palamos-cf
+Spanien,Atlético Marbella,atlético marbella,atletico-marbella
+Spanien,Sestao SC,sestao sc,sestao-river
+Spanien,Écija Balompié,écija balompié,ecija-balompie
+Spanien,CD Ourense,cd ourense,cd-ourense
+Spanien,RCD Mallorca B,rcd mallorca b,rcd-mallorca-b
+Spanien,Atlético Madrid B,atlético madrid b,atletico-madrid-b
+Spanien,CD Logroñés,cd logroñés,cd-logrones
+Spanien,CD Toledo,cd toledo,cd-toledo
+Spanien,CP Mérida,cp mérida,merida-ad
+Spanien,Sevilla FC,sevilla fc,sevilla-fc
+Spanien,Universidad Las Palmas,universidad las palmas,universidad-las-palmas
+Spanien,Atlético Madrid,atlético madrid,atletico-madrid
+Spanien,Burgos CF,burgos cf,burgos-cf
+Spanien,CF Extremadura,cf extremadura,cf-extremadura
+Spanien,CD Badajoz,cd badajoz,cd-badajoz
+Spanien,SD Compostela,sd compostela,sd-compostela
+Spanien,Algeciras CF,algeciras cf,algeciras-cf
+Spanien,Pontevedra CF,pontevedra cf,pontevedra-cf
+Spanien,Terrassa CF,terrassa cf,terrassa-cf
+Spanien,Atlético Malagueño,atlético malagueño,atletico-malagueno
+Spanien,UE Lleida,ue lleida,lleida-esportiu
+Spanien,Ciudad de Murcia,ciudad de murcia,ciudad-de-murcia
+Spanien,Lorca Deportiva,lorca deportiva,lorca-deportiva
+Spanien,UD Vecindario,ud vecindario,ud-vecindario
+Spanien,Granada 74 CF,granada 74 cf,granada-74-cf
+Spanien,Polideportivo Ejido,polideportivo ejido,polideportivo-ejido
+Spanien,Racing Ferrol,racing ferrol,racing-ferrol
+Spanien,Alicante CF,alicante cf,alicante-cf
+Spanien,Real Sociedad,real sociedad,real-sociedad
+Spanien,Real Unión,real unión,real-union
+Spanien,UD Salamanca,ud salamanca,ud-salamanca
+Spanien,CD Alcoyano,cd alcoyano,cd-alcoyano
+Spanien,Celta Vigo,celta vigo,celta-vigo
+Spanien,Villarreal CF B,villarreal cf b,villarreal-cf-b
+Spanien,CD Guadalajara,cd guadalajara,cd-guadalajara
+Spanien,Villarreal CF,villarreal cf,villarreal-cf
+Spanien,Xerez CD,xerez cd,xerez-cd
+Spanien,Hércules CF,hércules cf,hercules-cf
+Spanien,Real Jaén,real jaén,real-jaen
+Spanien,Real Madrid Castilla,real madrid castilla,real-madrid-castilla
+Spanien,Real Murcia,real murcia,real-murcia
+Spanien,SD Eibar,sd eibar,sd-eibar
+Spanien,Real Betis,real betis,real-betis
+Spanien,Recreativo Huelva,recreativo huelva,recreativo-huelva
+Spanien,Athletic Bilbao B,athletic bilbao b,athletic-bilbao-b
+Spanien,CD Alavés,cd alavés,cd-alaves
+Spanien,UE Llagostera,ue llagostera,ue-llagostera
+Spanien,Getafe CF,getafe cf,getafe-cf
+Spanien,Levante UD,levante ud,levante-ud
+Spanien,UCAM Murcia CF,ucam murcia cf,ucam-murcia-cf
+Spanien,CD Leonesa,cd leonesa,cd-leonesa
+Spanien,FC Barcelona B,fc barcelona b,fc-barcelona-b
+Spanien,Lorca FC,lorca fc,lorca-fc
+Spanien,Real Valladolid,real valladolid,real-valladolid
+Spanien,Sevilla Atlético,sevilla atlético,sevilla-atletico
+Spanien,CA Osasuna,ca osasuna,ca-osasuna
+Spanien,CF Reus Deportiu,cf reus deportiu,cf-reus-deportiu
+Spanien,Córdoba CF,córdoba cf,cordoba-cf
+Spanien,Gimnàstic,gimnàstic,gimnastic
+Spanien,Granada CF,granada cf,granada-cf
+Spanien,Rayo Majadahonda,rayo majadahonda,rayo-majadahonda
+Spanien,Cádiz CF,cádiz cf,cadiz-cf
+Spanien,CD Numancia,cd numancia,cd-numancia
+Spanien,Deportivo La Coruña,deportivo la coruña,deportivo-la-coruna
+Spanien,Elche CF,elche cf,elche-cf
+Spanien,Extremadura UD,extremadura ud,extremadura-ud
+Spanien,Racing Santander,racing santander,racing-santander
+Spanien,SD Huesca,sd huesca,sd-huesca
+Spanien,AD Alcorcón,ad alcorcón,ad-alcorcon
+Spanien,Albacete,albacete,albacete
+Spanien,CD Castellón,cd castellón,cd-castellon
+Spanien,CD Leganés,cd leganés,cd-leganes
+Spanien,CD Lugo,cd lugo,cd-lugo
+Spanien,CD Mirandés,cd mirandés,cd-mirandes
+Spanien,CD Tenerife,cd tenerife,cd-tenerife
+Spanien,CE Sabadell,ce sabadell,ce-sabadell
+Spanien,CF Fuenlabrada,cf fuenlabrada,cf-fuenlabrada
+Spanien,Espanyol Barcelona,espanyol barcelona,espanyol-barcelona
+Spanien,FC Cartagena,fc cartagena,fc-cartagena
+Spanien,Girona FC,girona fc,girona-fc
+Spanien,Málaga CF,málaga cf,malaga-cf
+Spanien,Rayo Vallecano,rayo vallecano,rayo-vallecano
+Spanien,RCD Mallorca,rcd mallorca,rcd-mallorca
+Spanien,Real Oviedo,real oviedo,real-oviedo
+Spanien,Real Zaragoza,real zaragoza,real-zaragoza
+Spanien,SD Ponferradina,sd ponferradina,sd-ponferradina
+Spanien,Sporting Gijón,sporting gijón,sporting-gijon
+Spanien,UD Almería,ud almería,ud-almeria
+Spanien,UD Las Palmas,ud las palmas,ud-las-palmas
+Spanien,UD Logroñés,ud logroñés,ud-logrones
+Frankreich,Girondins Bordeaux,girondins bordeaux,girondins-bordeaux
+Frankreich,Olympique Lyon,olympique lyon,olympique-lyon
+Frankreich,Paris Saint-Germain,paris saint-germain,paris-saint-germain
+Frankreich,FC Bourges,fc bourges,bourges-18
+Frankreich,Stade Rennes,stade rennes,stade-rennes
+Frankreich,Olympique Alès,olympique alès,olympique-ales
+Frankreich,Olympique Marseille,olympique marseille,olympique-marseille
+Frankreich,Stade Poitevin,stade poitevin,stade-poitevin
+Frankreich,FCO Charleville,fco charleville,fco-charleville
+Frankreich,Perpignan FC,perpignan fc,canet-roussillon
+Frankreich,SAS Épinal,sas épinal,sas-epinal
+Frankreich,Stade Briochin,stade briochin,stade-briochin
+Frankreich,FC Mulhouse,fc mulhouse,fc-mulhouse
+Frankreich,Sporting Club de Toulon 83,sporting club de toulon 83,sc-toulon
+Frankreich,Lille OSC,lille osc,lille-osc
+Frankreich,Louhans-Cuiseaux,louhans-cuiseaux,louhans-cuiseaux
+Frankreich,AS Cannes,as cannes,as-cannes
+Frankreich,FC Martigues,fc martigues,fc-martigues
+Frankreich,OGC Nice,ogc nice,ogc-nice
+Frankreich,AS Beauvais,as beauvais,as-beauvais
+Frankreich,ES Wasquehal,es wasquehal,es-wasquehal
+Frankreich,AS Saint-Étienne,as saint-étienne,as-saint-etienne
+Frankreich,ASOA Valence,asoa valence,olympique-de-valence
+Frankreich,FC Rouen,fc rouen,fc-rouen
+Frankreich,Racing Besançon,racing besançon,racing-besancon
+Frankreich,FC Sète,fc sète,fc-sete
+Frankreich,FC Gueugnon,fc gueugnon,fc-gueugnon
+Frankreich,Libourne St.-Seurin,libourne st.-seurin,libourne-st-seurin
+Frankreich,Montpellier HSC,montpellier hsc,montpellier-hsc
+Frankreich,Vannes OC,vannes oc,vannes-oc
+Frankreich,SC Bastia,sc bastia,sc-bastia
+Frankreich,US Boulogne,us boulogne,us-boulogne
+Frankreich,AS Monaco,as monaco,as-monaco
+Frankreich,CS Sedan,cs sedan,cs-sedan
+Frankreich,FC Nantes,fc nantes,fc-nantes
+Frankreich,CA Bastia,ca bastia,ca-bastia
+Frankreich,FC Istres,fc istres,fc-istres
+Frankreich,AC Arles-Avignon,ac arles-avignon,ac-arles-avignon
+Frankreich,Angers SCO,angers sco,angers-sco
+Frankreich,Dijon FCO,dijon fco,dijon-fco
+Frankreich,Évian Thonon Gaillard,évian thonon gaillard,evian-thonon-gaillard
+Frankreich,US Créteil-Lusitanos,us créteil-lusitanos,us-creteil-lusitanos
+Frankreich,RC Strasbourg,rc strasbourg,rc-strasbourg
+Frankreich,Stade Laval,stade laval,stade-laval
+Frankreich,FC Bourg-Péronnas,fc bourg-péronnas,fc-bourg-peronnas
+Frankreich,Nîmes Olympique,nîmes olympique,nimes-olympique
+Frankreich,Stade Reims,stade reims,stade-reims
+Frankreich,Tours FC,tours fc,tours-fc
+Frankreich,US Quevilly-Rouen,us quevilly-rouen,us-quevilly-rouen
+Frankreich,AS Béziers,as béziers,as-beziers
+Frankreich,FC Metz,fc metz,fc-metz
+Frankreich,GFC Ajaccio,gfc ajaccio,gfc-ajaccio
+Frankreich,Red Star FC,red star fc,red-star-fc_2
+Frankreich,Stade Brest,stade brest,stade-brest
+Frankreich,FC Lorient,fc lorient,fc-lorient
+Frankreich,Le Mans FC,le mans fc,le-mans-fc
+Frankreich,RC Lens,rc lens,rc-lens
+Frankreich,US Orléans,us orléans,us-orleans
+Frankreich,AC Ajaccio,ac ajaccio,ac-ajaccio
+Frankreich,AJ Auxerre,aj auxerre,aj-auxerre
+Frankreich,Amiens SC,amiens sc,amiens-sc
+Frankreich,AS Nancy,as nancy,as-nancy
+Frankreich,Chamois Niortais,chamois niortais,chamois-niortais
+Frankreich,Clermont Foot,clermont foot,clermont-foot
+Frankreich,EA Guingamp,ea guingamp,ea-guingamp
+Frankreich,ESTAC Troyes,estac troyes,estac-troyes
+Frankreich,FC Chambly,fc chambly,fc-chambly
+Frankreich,FC Sochaux,fc sochaux,fc-sochaux
+Frankreich,Grenoble Foot 38,grenoble foot 38,grenoble-foot-38
+Frankreich,LB Châteauroux,lb châteauroux,lb-chateauroux
+Frankreich,Le Havre AC,le havre ac,le-havre-ac
+Frankreich,Paris FC,paris fc,paris-fc
+Frankreich,Pau FC,pau fc,pau-fc
+Frankreich,Rodez AF,rodez af,rodez-af
+Frankreich,SM Caen,sm caen,sm-caen
+Frankreich,Toulouse FC,toulouse fc,toulouse-fc
+Frankreich,USL Dunkerque,usl dunkerque,usl-dunkerque
+Frankreich,Valenciennes FC,valenciennes fc,valenciennes-fc
+Niederlande,SVV Schiedam,svv schiedam,svv-schiedam
+Niederlande,AFC Ajax,afc ajax,afc-ajax
+Niederlande,FC Utrecht,fc utrecht,fc-utrecht
+Niederlande,Feyenoord,feyenoord,feyenoord
+Niederlande,PSV Eindhoven,psv eindhoven,psv-eindhoven
+Niederlande,sc Heerenveen,sc heerenveen,sc-heerenveen
+Niederlande,Vitesse,vitesse,vitesse
+Niederlande,AZ Alkmaar,az alkmaar,az-alkmaar
+Niederlande,ADO Den Haag,ado den haag,ado-den-haag
+Niederlande,BV Veendam,bv veendam,sc-veendam
+Niederlande,FC Groningen,fc groningen,fc-groningen
+Niederlande,FC Zwolle,fc zwolle,pec-zwolle
+Niederlande,Heracles Almelo,heracles almelo,heracles-almelo
+Niederlande,HFC Haarlem,hfc haarlem,hfc-haarlem
+Niederlande,RBC Roosendaal,rbc roosendaal,rbc-roosendaal
+Niederlande,Willem II,willem ii,willem-ii
+Niederlande,Jong FC Twente,jong fc twente,jong-fc-twente
+Niederlande,Achilles'29,achilles'29,achilles29
+Niederlande,VVV-Venlo,vvv-venlo,vvv-venlo
+Niederlande,FC Emmen,fc emmen,fc-emmen
+Niederlande,Fortuna Sittard,fortuna sittard,fortuna-sittard
+Niederlande,FC Twente,fc twente,fc-twente
+Niederlande,RKC Waalwijk,rkc waalwijk,rkc-waalwijk
+Niederlande,Sparta Rotterdam,sparta rotterdam,sparta-rotterdam
+Niederlande,Almere City FC,almere city fc,almere-city-fc
+Niederlande,AZ Alkmaar (J),az alkmaar (j),az-alkmaar-j
+Niederlande,De Graafschap,de graafschap,de-graafschap
+Niederlande,FC Den Bosch,fc den bosch,fc-den-bosch
+Niederlande,FC Dordrecht,fc dordrecht,fc-dordrecht
+Niederlande,FC Eindhoven,fc eindhoven,fc-eindhoven
+Niederlande,FC Utrecht (J),fc utrecht (j),fc-utrecht-j
+Niederlande,FC Volendam,fc volendam,fc-volendam
+Niederlande,Go Ahead Eagles,go ahead eagles,go-ahead-eagles
+Niederlande,Helmond Sport,helmond sport,helmond-sport
+Niederlande,Jong Ajax,jong ajax,jong-ajax
+Niederlande,Jong PSV,jong psv,jong-psv
+Niederlande,MVV,mvv,mvv_2
+Niederlande,NAC Breda,nac breda,nac-breda
+Niederlande,NEC Nijmegen,nec nijmegen,nec-nijmegen
+Niederlande,Roda JC Kerkrade,roda jc kerkrade,roda-jc-kerkrade
+Niederlande,SBV Excelsior,sbv excelsior,sbv-excelsior
+Niederlande,SC Cambuur,sc cambuur,sc-cambuur
+Niederlande,SC Telstar,sc telstar,sc-telstar
+Niederlande,TOP Oss,top oss,top-oss
