@@ -56,7 +56,7 @@ COMP_MAP_DF = {
 def clubs(comp, fseason, lseason):
 
 	try:
-		csv = pd.read_csv(path+'/clubs.csv')
+		csv = pd.read_csv(club_folder+'/clubs.csv')
 	except:
 		csv = None
 
