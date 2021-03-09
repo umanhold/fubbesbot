@@ -128,7 +128,7 @@ def timezone(update, context):
 		except KeyError:
 			context.chat_data['cal'] = [d]
 
-		url = f'fubbesbot.ddns.net/{user.id}_{club_}.ics'
+		url = f'http://fubbesbot.ddns.net/{user.id}_{club_}.ics'
 		update.message.reply_text(url)
 
 		# ask for restart
@@ -195,8 +195,8 @@ def restart(update, context):
 			else:
 				tz, name, club_ = d['tz'], d['name'], d['club_']
 				ical(data,cal_folder,tz,name)
-				url = f'fubbesbot.ddns.net/{user.id}_{club_}.ics'
-				update.message.reply_text(url)
+				text = f'{club} calendar has been updated!'
+				update.message.reply_text(text)
 		return PAUSE
 
 	elif reply in reject:
