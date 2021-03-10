@@ -9,7 +9,7 @@ from datetime import datetime, timedelta, time
 import pytz
 from pytz import timezone
 from icalendar import Calendar, Event
-from fubbes_def import COMP_MAP_ABBRV
+from fubbes_def import COMP_MAP_ABBRV, club_folder
 
 # methods
 
