@@ -13,6 +13,13 @@ from fubbes_def import COMP_MAP_ABBRV, club_folder
 
 # methods
 
+def dtstr2dtaw(string, tz):
+	""" takes date string (%d.%m.%Y %H:%M) and
+	return aware datetime """
+	tz = pytz.timezone(tz)
+	naive = datetime.strptime(string, '%d.%m.%Y %H:%M')
+	return tz.localize(naive, is_dst=None).astimezone(pytz.utc)
+
 def mvelm2nxarr(arrlist, value):
 	""" takes list of arrays and moves elements at a position
 	larger than value to the first position of the next array 
@@ -53,45 +60,19 @@ def time2str(time):
 	minute = '0'+str(time.minute) if time.minute < 10 else str(time.minute)
 	return str(time.hour)+':'+minute
 
-def date_parser(date, time):
-	""" parses date for calendar """
-	return datetime.strptime(f'{datum} {time}', '%d.%m.%Y %H:%M')\
-			.strftime('%Y%m%d %H:%M:%S')
-
-def vlist(lst):
-	""" returns a list as a vertical list string """
-	string = "\n\n"
-	i = 1
-	for l in lst:
-		string = string + "[" + str(i) + "] " + l +"\n"
-		i += 1
-	return string
-
 def tz_syntax(string):
-	""" returns 'good' if reply to adjust the current time zone is fine """
+	""" returns 'good' and clean reply if reply to adjust the current time zone is fine """
 	signs = ['+','-']
 	cond = all(len(s) <= 2 for s in string[1:].replace(',','.').split('.'))
-	return 'good' if string[0] in signs and cond == True else None
+	if string[0] in signs and cond == True or string == '0':
+		return 'good', string.replace(',','.').strip()
+	else:
+		return None, None
 
 def current_season():
 	""" returns the latter year of current season """
 	year, month = datetime.today().year, datetime.today().month
 	return year-1 if month <= 6 else year
-
-def comp_select(comp, string):
-	""" takes selection and returns selected competitions """
-	split = string.split()
-	cond1 =	len(split) == 3 and split[0].isdigit() and \
-			split[1] == 'to' and split[2].isdigit()
-	cond2 = all(s.isdigit() for s in split)
-	if cond1 is True:
-		start, end = int(split[0]), int(split[2])
-		select = comp[start-1:end] if start < end else comp[end-1:start]
-	elif cond2 is True:
-		select = [comp[int(s)-1] for s in split]
-	else:
-		select = None
-	return select
 
 def match_club(string):
 	""" takes user reply and matches club name from csv """
@@ -128,19 +109,6 @@ def comp_clean(string):
 		string = string.replace(re.search(p2, string)[0],'').strip()
 	return string
 
-def competition(club_url, season):
-	""" returns list of competitions of club in season """
-	soup = weltfussball(club_url, season)
-	if soup is not None:
-		tbody = soup.find_all('tbody')
-		td = tbody[1].find_all('td')
-		colspan = td[0]['colspan']
-		titles = tbody[1].find_all('td', attrs={'class': 'hell', 'colspan': colspan})
-		comp = list(set([comp_clean(t.contents[0]['title']) for t in titles]))
-		return [COMP_MAP[c] if c in COMP_MAP else c for c in comp]
-	else:
-		return None
-
 def comp_chunks(td, td_title):
 	""" returns list of tuples to slice td list w.r.t competition """
 	tups = []
@@ -158,7 +126,7 @@ def comp_chunks(td, td_title):
 	tups.append((x,len(td)))
 	return tups
 
-def cm2df(comp_mday):
+def cm2df(comp_mday, tz):
 	""" returns dataframe of dictionary with competiions and match days """
 	data = []
 	for comp in comp_mday:
@@ -168,16 +136,16 @@ def cm2df(comp_mday):
 			hour = m[3].get_text()
 			loc = m[4].get_text()
 			opp = m[6].contents[1].get_text()
-			
+
 			if len(m[7].contents) > 1:
 				res = m[7].contents[1].get_text().strip()
 			else:
 				res = m[7].contents[0].strip()
-						
+					
 			if hour == '':
 				hour = '00:00'
 			date_str = f'{date} {hour}'
-			begin = datetime.strptime(date_str, '%d.%m.%Y %H:%M')
+			begin = dtstr2dtaw(date_str, tz)
 			if begin.time() == time(0,0):
 				end = begin + timedelta(hours=24)
 			else:
@@ -201,7 +169,7 @@ def cm2df(comp_mday):
 
 	return pd.DataFrame(data=data)
 
-def matchdays(club_url, season):
+def matchdays(club_url, season, tz):
 	""" returns match days data """
 	soup = weltfussball(club_url, season)
 	tbody = soup.find_all('tbody')
@@ -213,11 +181,12 @@ def matchdays(club_url, season):
 	for c in comp:
 		lstarr = np.split(np.array(c, dtype=object), len(c)/int(colspan))
 		comp_mday[c[0].get_text()] = mvelm2nxarr(lstarr, int(colspan))
-	return cm2df(comp_mday)
-	
-def ical(data,path,tz,name):
-	""" creates ical file of data at path with timezone """
-	
+	return cm2df(comp_mday, tz)
+
+
+def appcal2df(data,path,name):
+	""" appends existing calendar file to dataframe """
+
 	os.chdir(path)
 	try:
 		f = open(name+'.ics', 'rb')
@@ -232,22 +201,17 @@ def ical(data,path,tz,name):
 			}
 			dlist.append(d)
 		df = pd.DataFrame(data=dlist)
-		try:
-			df['begin'] = df['begin'].dt.tz_convert(tz=tz)
-			df['end'] = df['end'].dt.tz_convert(tz=tz)
-		except TypeError:
-			df['begin'] = df['begin'].dt.tz_localize(tz=tz)
-			df['end'] = df['end'].dt.tz_localize(tz=tz)
-		data['begin'] = data['begin'].dt.tz_localize(tz=tz)
-		data['end'] = data['end'].dt.tz_localize(tz=tz)	
 		df = df.append(data).sort_values(['begin','end','name'])
-		data = df.drop_duplicates(['begin','end'], keep='last')
+		return df.drop_duplicates(['begin','end'], keep='last')
 
 	except FileNotFoundError:
-		pass
-		
-	cal = Calendar()
+		return data
+	
+def ical(data,path,name):
+	""" creates ical file of data at path """
 
+	os.chdir(path)
+	cal = Calendar()
 	for index, row in data.iterrows():
 
 		event = Event()
@@ -256,7 +220,6 @@ def ical(data,path,tz,name):
 		event.add('summary', row['name'])
 		cal.add_component(event)
 
-	os.chdir(path)
 	f = open(name+'.ics', 'wb')
 	f.write(cal.to_ical())
 	f.close()
