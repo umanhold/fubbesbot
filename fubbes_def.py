@@ -10,7 +10,7 @@ confirm = ['yes','Yes','y','Ja','ja','j']
 reject = ['no','No','n','Nein','nein'] 
 
 TIME_ZONES = {
-	'11.75': 'NZ-CHAT', # utc+12 3/4
+	'+11.75': 'NZ-CHAT', # utc+12 3/4
 	'+11': 'Pacific/Fiji', # utc+12
 	'+10': 'Asia/Magadan', # utc+11
 	'+9': 'Australia/Melbourne', # utc+10
@@ -29,10 +29,10 @@ TIME_ZONES = {
 	'+2.5': 'Iran', # utc+3 1/2
 	'+2': 'Europe/Moscow', # utc+3
 	'+1': 'EET', # utc+2
-	'+0': 'Europe/London', # utc+1
-	'-0': 'Europe/London', # utc+1
-	'0': 'Europe/London', # utc+1
-	'-1': 'Europe/Berlin', # utc-0
+	'+0': 'Europe/Berlin', # utc+1
+	'-0': 'Europe/Berlin', # utc+1
+	'0': 'Europe/Berlin', # utc+1
+	'-1': 'Europe/London', # utc-0
 	'-2': 'Atlantic/Cape_Verde', # utc-1
 	'-3': 'Atlantic/South_Georgia',  # utc-2
 	'-4': 'Brazil/East', # utc-3
@@ -57,4 +57,5 @@ COMP_MAP_ABBRV = {
 	'Europa League': 'EL',
 	'Europa League Qual.': 'ELQ',
 	'Freundschaft Vereine': 'FS',
+	'Klub-WM': 'KWM'
 }
