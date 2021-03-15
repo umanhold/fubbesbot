@@ -5,7 +5,6 @@ from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, Conv
 from fubbes import (match_club, matchdays, current_season, ical, current_time, time2str, tz_syntax,
 df_set_difference, appcal2df)
 from datetime import datetime, timedelta, time, timezone
-import io
 from fubbes_def import (TOKEN, cal_folder, club_folder, confirm, reject, TIME_ZONES)
 
 
