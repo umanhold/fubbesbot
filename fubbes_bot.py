@@ -3,10 +3,9 @@ import logging
 from telegram import (ReplyKeyboardMarkup, ReplyKeyboardRemove)
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, ConversationHandler)
 from fubbes import (match_club, matchdays, current_season, ical, current_time, time2str, tz_syntax,
-df_set_difference, appcal2df)
+df_set_difference, appcal2df, convert_tz)
 from datetime import datetime, timedelta, time, timezone
 from fubbes_def import (TOKEN, cal_folder, club_folder, confirm, reject, TIME_ZONES)
-
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
@@ -298,12 +297,8 @@ def altertimezone(update, context):
 	if reply in confirm:
 		
 		for d in dlist:
-			data = d['data']
-			data['begin'] = data['begin'].dt.tz_convert(tz=tz)
-			data['end'] = data['end'].dt.tz_convert(tz=tz)
-			d['data'] = data
-			club_ = d['club_']
-			club = d['club']
+			data = convert_tz(d['data'], tz)
+			d['data'], club_, club = data, d['club_'], d['club']
 			name = f'{user.id}_{club_}'
 			ical(data,cal_folder,name)
 			text = f'The timezone has been altered for {club}.'
