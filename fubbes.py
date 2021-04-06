@@ -13,12 +13,18 @@ from fubbes_def import COMP_MAP_ABBRV, club_folder
 
 # methods
 
+def convert_tz(data, tz):
+	columns = ['begin','end']
+	for c in columns:
+		data[c] = pd.to_datetime(data[c], utc=True)
+		data[c] = data[c].dt.tz_convert(tz=tz)
+	return data
+
 def dtstr2dtaw(string, tz):
 	""" takes date string (%d.%m.%Y %H:%M) and
 	return aware datetime """
-	tz = pytz.timezone(tz)
 	naive = datetime.strptime(string, '%d.%m.%Y %H:%M')
-	return tz.localize(naive, is_dst=None).astimezone(pytz.utc)
+	return pytz.timezone(tz).localize(naive, is_dst=None)
 
 def mvelm2nxarr(arrlist, value):
 	""" takes list of arrays and moves elements at a position
@@ -49,7 +55,9 @@ def mvelm2nxarr(arrlist, value):
 
 def df_set_difference(df1,df2):
 	""" returns data that is in df2 but not in df1 """
-	return pd.concat([df2, df1, df1]).drop_duplicates(keep=False)
+	df1['date'] = df1.apply(lambda x: x['begin'].date(), axis=1)
+	df2['date'] = df2.apply(lambda x: x['begin'].date(), axis=1)
+	return pd.concat([df2, df1]).drop_duplicates(subset=['date']).drop(['date'], axis=1)
 
 def current_time(tz):
 	""" returns current time for specified time zone """
@@ -144,10 +152,9 @@ def cm2df(comp_mday, tz):
 					
 			if hour == '':
 				hour = '00:00'
-			date_str = f'{date} {hour}'
-			begin = dtstr2dtaw(date_str, tz)
+			begin = dtstr2dtaw(f'{date} {hour}', tz)
 			if begin.time() == time(0,0):
-				end = begin + timedelta(hours=24)
+				end = begin + timedelta(hours=23, minutes=59)
 			else:
 				end = begin + timedelta(minutes=110)
 
