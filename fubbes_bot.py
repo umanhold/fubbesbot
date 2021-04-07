@@ -213,7 +213,7 @@ def restart(update, context):
 	elif reply == 'Update':
 		for d in dlist:
 			df = df_set_difference(d['data'],matchdays(d['club_url'],current_season(),tz))
-			if df.empty == True:
+			if df == d['data']:
 				club = d['club']
 				text = f'Nothing to update for {club}!'
 				update.message.reply_text(text)
