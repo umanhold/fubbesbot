@@ -57,7 +57,7 @@ def df_set_difference(df1,df2):
 	""" returns data that is in df2 but not in df1 """
 	df1['date'] = df1.apply(lambda x: x['begin'].date(), axis=1)
 	df2['date'] = df2.apply(lambda x: x['begin'].date(), axis=1)
-	return pd.concat([df2, df1]).drop_duplicates(subset=['date']).drop(['date'], axis=1)
+	return pd.concat([df1, df2]).drop_duplicates(subset=['date'], keep=False).drop(['date'], axis=1)
 
 def current_time(tz):
 	""" returns current time for specified time zone """
