@@ -213,7 +213,7 @@ def restart(update, context):
 	elif reply == 'Update':
 		for d in dlist:
 			df = df_set_difference(d['data'],matchdays(d['club_url'],current_season(),tz))
-			if df == d['data']:
+			if df.empty == True:
 				club = d['club']
 				text = f'Nothing to update for {club}!'
 				update.message.reply_text(text)
@@ -227,7 +227,7 @@ def restart(update, context):
 		context.chat_data['cal'] = dlist
 		return PAUSE
 
-	elif reply == 'Timezone':
+	elif reply == 'Time zone':
 		time = current_time('Europe/Berlin')
 		time_str = time2str(time)
 		text = f'Type the difference in hours to the time in Europe/Berlin ({time_str}).'
@@ -253,7 +253,7 @@ def pause(update, context):
 	logger.info('User says: %s', reply)
 
 	# ask for restart
-	buttons = [['Update'],['Add'],['Timezone']]
+	buttons = [['Update'],['Add'],['Time zone']]
 	text = 'Would you like to update your calendar, add another one, or change the time zone?'
 	update.message.reply_text(text,reply_markup=ReplyKeyboardMarkup(buttons, one_time_keyboard=True))
 
