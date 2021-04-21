@@ -123,7 +123,7 @@ def club(update, context):
 				update.message.reply_text(text, reply_markup=ReplyKeyboardMarkup(buttons, one_time_keyboard=True))
 				return RESTART
 
-			except:
+			except Exception as e:
 				text = 'Sorry! Something went wrong.'
 				update.message.reply_text(text)
 				text = 'What\'s your club again?'
