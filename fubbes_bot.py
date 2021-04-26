@@ -5,7 +5,7 @@ from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, Conv
 from fubbes import (match_club, matchdays, current_season, ical, current_time, time2str, tz_syntax,
 df_set_difference, appcal2df, convert_tz)
 from datetime import datetime, timedelta, time, timezone
-from fubbes_def import (TOKEN, cal_folder, club_folder, confirm, reject, TIME_ZONES)
+from fubbes_def import (TOKEN, cal_folder, club_folder, confirm, reject, exit, TIME_ZONES)
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
@@ -50,6 +50,9 @@ def timezone(update, context):
 		update.message.reply_text(text+exp)
 		return TIMEZONE2
 
+	elif reply in exit:
+		return PAUSE
+
 def timezone2(update, context):
 
 	reply = update.message.text
@@ -69,6 +72,9 @@ def timezone2(update, context):
 			text = 'Please check your watch!'
 			update.message.reply_text(text)
 			return TIMEZONE2
+
+	elif reply in exit:
+		return PAUSE
 
 	else:
 		update.message.reply_text('Please have a look at the examples!')
@@ -140,6 +146,9 @@ def club(update, context):
 		update.message.reply_text(text,reply_markup=ReplyKeyboardMarkup([club], one_time_keyboard=True))
 		return CLUB
 
+	elif reply in exit:
+		return PAUSE
+
 	else:
 		text = 'Not precise enough. Please check the spelling of your club'
 		update.message.reply_text(text)
@@ -192,6 +201,9 @@ def club2(update, context):
 		update.message.reply_text(text, reply_markup=ReplyKeyboardMarkup(buttons, one_time_keyboard=True))
 
 		return RESTART
+
+	elif reply in exit:
+		return PAUSE
 
 	else:
 		update.message.reply_text('Yes or no?')
@@ -281,6 +293,9 @@ def timezone3(update, context):
 			update.message.reply_text(text)
 			return TIMEZONE3
 
+	elif reply in exit:
+		return PAUSE
+
 	else:
 		update.message.reply_text('Please have a look at the examples!')
 		return TIMEZONE3
@@ -308,8 +323,10 @@ def altertimezone(update, context):
 		return PAUSE
 
 	elif reply in reject:
-
 		return TIMEZONE3
+
+	elif reply in exit:
+		return PAUSE
 
 
 def main():

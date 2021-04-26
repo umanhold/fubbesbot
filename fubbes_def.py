@@ -8,6 +8,7 @@ club_folder = os.environ['club_folder']
 
 confirm = ['yes','Yes','y','Ja','ja','j']
 reject = ['no','No','n','Nein','nein'] 
+exit = ['EXIT','exit']
 
 TIME_ZONES = {
 	'+11.75': 'NZ-CHAT', # utc+12 3/4
