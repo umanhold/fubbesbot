@@ -21,10 +21,19 @@ def convert_tz(data, tz):
 	return data
 
 def dtstr2dtaw(string, tz):
-	""" takes date string (%d.%m.%Y %H:%M) and
-	return aware datetime """
-	naive = datetime.strptime(string, '%d.%m.%Y %H:%M')
-	return pytz.timezone(tz).localize(naive, is_dst=None)
+	""" takes date string of format %d.%m.%Y (%H:%M)
+	and returns aware datetime """
+	
+	r1 = re.compile('\d{2}.\d{2}.\d{4} \d{2}:\d{2}')
+	r2 = re.compile('\d{2}.\d{2}.\d{4}')
+	
+	assert (r1.match(string), r2.match(string)) != (None, None)
+	
+	if r1.match(string) is not None:
+		fmt = '%d.%m.%Y %H:%M'
+	elif r2.match(string) is not None:
+		fmt = '%d.%m.%Y'
+	return pytz.timezone(tz).localize(datetime.strptime(string, fmt), is_dst=None)
 
 def mvelm2nxarr(arrlist, value):
 	""" takes list of arrays and moves elements at a position
@@ -152,11 +161,9 @@ def cm2df(comp_mday, tz):
 				res = m[7].contents[0].strip()
 					
 			if hour == '':
-				hour = '00:00'
-			begin = dtstr2dtaw(f'{date} {hour}', tz)
-			if begin.time() == time(0,0):
-				end = begin + timedelta(hours=23, minutes=59)
+				begin, end = dtstr2dtaw(f'{date}', tz), dtstr2dtaw(f'{date}', tz)
 			else:
+				begin = dtstr2dtaw(f'{date} {hour}', tz)
 				end = begin + timedelta(minutes=110)
 
 			competition = comp_clean(comp)
@@ -192,29 +199,6 @@ def matchdays(club_url, season, tz):
 	return cm2df(comp_mday, tz)
 
 
-def appcal2df(data,path,name):
-	""" appends existing calendar file to dataframe """
-
-	os.chdir(path)
-	try:
-		f = open(name+'.ics', 'rb')
-		cal = Calendar.from_ical(f.read())
-		dlist = []
-		for i in range(1,len(cal.subcomponents)):
-			event = cal.subcomponents[i]
-			d = {
-				'begin': event['dtstart'].dt,
-				'end': event['dtend'].dt,
-				'name': event['summary']
-			}
-			dlist.append(d)
-		df = pd.DataFrame(data=dlist)
-		df = df.append(data).sort_values(['begin','end','name'])
-		return df.drop_duplicates(['begin','end'], keep='last')
-
-	except FileNotFoundError:
-		return data
-	
 def ical(data,path,name):
 	""" creates ical file of data at path """
 

@@ -3,7 +3,7 @@ import logging
 from telegram import (ReplyKeyboardMarkup, ReplyKeyboardRemove)
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, ConversationHandler)
 from fubbes import (match_club, matchdays, current_season, ical, current_time, time2str, tz_syntax,
-df_set_difference, appcal2df, convert_tz)
+df_set_difference, convert_tz)
 from datetime import datetime, timedelta, time, timezone
 from fubbes_def import (TOKEN, cal_folder, club_folder, confirm, reject, exit, TIME_ZONES)
 
@@ -102,15 +102,15 @@ def club(update, context):
 				df = matchdays(club_url,current_season(),tz)
 				club_ = club.replace(' ','_')
 				name = f'{user.id}_{club_}'
-				data = appcal2df(df,cal_folder,name)
-				ical(data,cal_folder,name)
+				#data = appcal2df(df,cal_folder,name)
+				ical(df,cal_folder,name)
 
 				# list of dictonaries with calendars
 				d = {
 					'club_url': club_url,
 					'club': club,
 					'club_': club_,
-					'data': data,
+					'data': df,
 					'name': name		
 				}
 
@@ -173,8 +173,7 @@ def club2(update, context):
 		df = matchdays(club_url,current_season(),tz)
 		club_ = club.replace(' ','_')
 		name = f'{user.id}_{club_}'
-		data = appcal2df(df,cal_folder,name)
-		ical(data,cal_folder,name)
+		ical(df,cal_folder,name)
 
 
 		# list of dictonaries with calendars
@@ -224,16 +223,16 @@ def restart(update, context):
 
 	elif reply == 'Update':
 		for d in dlist:
-			df = df_set_difference(d['data'],matchdays(d['club_url'],current_season(),tz))
-			if df.empty == True:
+			df = matchdays(d['club_url'])
+			dfdif = df_set_difference(d['data'],df,current_season(),tz)
+			if dfdif.empty == True:
 				club = d['club']
 				text = f'Nothing to update for {club}!'
 				update.message.reply_text(text)
 			else:
 				name, club = d['name'], d['club']
-				data = appcal2df(df,cal_folder,name)
-				ical(data,cal_folder,name)
-				d['data'] = data
+				ical(df,cal_folder,name)
+				d['data'] = df
 				text = f'{club} calendar has been updated!'
 				update.message.reply_text(text)
 		context.chat_data['cal'] = dlist
